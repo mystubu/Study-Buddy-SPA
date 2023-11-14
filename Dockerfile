@@ -4,6 +4,6 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install
-COPY . .
+COPY studdybuddy' .
 
 CMD ["npm", "run", "start"]
