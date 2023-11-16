@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import MessageList from './messages/messageList';
 import InputField from './messageInput/inputBox';
-import messages from '../services/messaging'
+
 
 const MessageView = ({ targetChat }) => {
-    const messages = [
-        { text: 'Hello there!', sender: 'Studybuddy' },
-        { text: 'How are you?', sender: 'Bob' },
-      ];
+    const [messages, setMessages] = useState([]);
+
+    const handleSendMessage = (newMessage) => {
+        setMessages([...messages, newMessage]);
+    };
 
     return(
             <div className="flex flex-col h-full">
@@ -17,7 +18,6 @@ const MessageView = ({ targetChat }) => {
               <div className="bg-white p-2">
                 <InputField placeholder="Typ een bericht"/>
             </div>
-      
         </div>
     );
 };

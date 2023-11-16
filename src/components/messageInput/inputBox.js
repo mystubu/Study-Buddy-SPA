@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import sendMessage from '../../services/messaging';
 
 const InputField = ({ placeholder }) => {
+
+    const sendMessage = async () => {
+            try {
+                const response = await fetch('http://localhost:3001/api/data');
+                const result = await response.json();
+                (result);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+    }
+
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
-    };
-
-    const handleButtonClick = () => {
-        sendMessage(inputValue);
     };
 
     return (
@@ -20,7 +26,7 @@ const InputField = ({ placeholder }) => {
                 value={inputValue} 
                 onChange={handleInputChange}
             />
-            <button onClick={handleButtonClick}>Send</button>
+            <button onClick={sendMessage}>Send</button>
         </div>
     );
 };
