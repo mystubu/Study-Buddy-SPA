@@ -3,7 +3,8 @@ FROM node:20-alpine
 WORKDIR /app 
 COPY package*.json ./
 
-RUN npm install
-COPY studdybuddy' .
 
-CMD ["npm", "run", "start"]
+COPY . .
+
+COPY entrypoint.sh /usr/src/app/entrypoint.sh
+RUN chmod +x /usr/src/app/entrypoint.sh
