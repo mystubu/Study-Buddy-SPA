@@ -1,5 +1,5 @@
 import './css/App.css';
-import MessageView from './components/messages/messageView'
+import MessageView from './components/messageView'
 function App() {
   
 
@@ -10,14 +10,7 @@ function App() {
             <h1>Menu</h1>
           </div>
           <div className="col-span-5 bg-slate-900"> 
-            <div className="flex flex-col h-full">
-              <div className="flex-grow">
-                <MessageView />
-              </div>
-              <div className="bg-white p-2">
-                <input className="w-full" placeholder="Type a message..."></input>
-              </div>
-            </div>
+            <MessageView />
           </div>
           <div className="col-span-2 bg-gray-700"> 
             <h1>Menu</h1>
