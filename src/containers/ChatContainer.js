@@ -11,6 +11,7 @@ const ChatContainer = () => {
             ...prevConversation,
             {
                 entity: 'user',
+                name: 'User',
                 message: userMessage
             }
         ]);
@@ -21,7 +22,8 @@ const ChatContainer = () => {
             setConversation(prevConversation => [
                 ...prevConversation,
                 {
-                    entity: 'chatbot',
+                    entity: 'bot',
+                    name: 'Study buddy',
                     message: botResponse
                 }
             ]);
