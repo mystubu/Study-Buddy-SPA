@@ -16,10 +16,8 @@ const api = {
                 throw new Error('Failed to send messages');
             }
 
-            const responseData = await response.json();
-
             // return response
-            return responseData;
+            return await response.json();
         } catch (error) {
             console.error('Error fetching messages:', error.message);
             throw error;
