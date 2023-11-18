@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import MessageList from '../components/MessageList';
 import MessageForm from '../components/MessageForm';
 import api from '../services/api';
@@ -7,19 +7,22 @@ const ChatContainer = () => {
     const [conversation, setConversation] = useState([]);
 
     const sendMessage = (userMessage) => {
+        setConversation(prevConversation => [
+            ...prevConversation,
+            {
+                entity: 'user',
+                message: userMessage
+            }
+        ]);
+
         api.PostMessage(userMessage).then(response => {
-            const newUserMessage = response.user_message;
-            const chatBotMessage = response.message;
+            const botResponse = response.message;
 
             setConversation(prevConversation => [
                 ...prevConversation,
                 {
-                    entity: 'user',
-                    message: newUserMessage
-                },
-                {
                     entity: 'chatbot',
-                    message: chatBotMessage
+                    message: botResponse
                 }
             ]);
         });
@@ -27,8 +30,8 @@ const ChatContainer = () => {
 
     return (
         <div>
-            <MessageList messages={conversation} />
-            <MessageForm onSendMessage={sendMessage} />
+            <MessageList messages={conversation}/>
+            <MessageForm onSendMessage={sendMessage}/>
         </div>
     );
 };
