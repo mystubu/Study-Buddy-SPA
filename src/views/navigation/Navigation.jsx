@@ -4,7 +4,7 @@ const Navigation = () => {
             <div className="w-full">
                 test
             </div>
-            <div className="px-4 bg-black w-full">
+            <div className="px-4 w-full">
                 hallo
             </div>
         </nav>
