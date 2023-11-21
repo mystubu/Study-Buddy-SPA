@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/App.css';
 import Chat from "./views/chat/Chat";
 import Navigation from "./views/navigation/Navigation";

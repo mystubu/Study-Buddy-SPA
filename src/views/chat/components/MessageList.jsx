@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 const MessageList = ({ messages }) => {
     return (
@@ -8,6 +9,10 @@ const MessageList = ({ messages }) => {
             ))}
         </ul>
     );
+};
+
+MessageList.propTypes = {
+    messages: PropTypes.array.isRequired,
 };
 
 export default MessageList;
