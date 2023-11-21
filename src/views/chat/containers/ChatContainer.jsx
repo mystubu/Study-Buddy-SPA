@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MessageList from '../components/MessageList';
 import MessageForm from '../components/MessageForm';
-import api from '../services/api';
+import api from '../../../services/api';
 
 const ChatContainer = () => {
     const [conversation, setConversation] = useState([]);

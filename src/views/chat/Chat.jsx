@@ -1,7 +1,7 @@
 import React from 'react';
-import ChatContainer from '../containers/ChatContainer';
+import ChatContainer from './containers/ChatContainer';
 
-const ChatView = () => {
+const Chat = () => {
     return (
         <div>
             <h2>Chat Room</h2>
@@ -10,4 +10,4 @@ const ChatView = () => {
     );
 };
 
-export default ChatView;
+export default Chat;
