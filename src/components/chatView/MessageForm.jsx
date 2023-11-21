@@ -1,4 +1,3 @@
-// MessageForm.js
 import React, { useState } from 'react';
 
 const MessageForm = ({ onSendMessage }) => {
