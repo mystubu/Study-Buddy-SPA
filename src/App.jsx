@@ -1,19 +1,20 @@
-import React from 'react'
-import Test from './components/test/test'
-
-import './index.css';
+import './styles/App.css';
+import Chat from "./views/chat/Chat";
+import Navigation from "./views/navigation/Navigation";
+import Toolbar from "./views/toolbar/Toolbar";
 
 function App() {
-  return (
-    <div className="container mx-auto">
-        <div className="columns-2">
-            <h1 className="text-3xl font-bold underline text-blue-600">Header</h1>
-            <h1 className="text-3xl font-bold underline">Header</h1>
+    return (
+        <div className="App">
+            <div className="container mx-auto">
+                <div className="columns-3">
+                    <Navigation/>
+                    <Chat />
+                    <Toolbar />
+                </div>
+            </div>
         </div>
-
-      <Test></Test>
-    </div>
-  );
+    );
 }
 
 export default App;
