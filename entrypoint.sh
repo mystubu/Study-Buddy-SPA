@@ -1,6 +1,11 @@
 #!/bin/sh
 
+# Run npm install
 npm install
-npm run start
 
+if [ "$ENV" = "production" ]; then
+  npm run build
 
+elif [ "$ENV" = "development" ]; then
+  npm run start
+fi
