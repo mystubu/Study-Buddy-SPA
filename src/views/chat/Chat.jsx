@@ -3,9 +3,9 @@ import ChatContainer from './containers/ChatContainer';
 
 const Chat = () => {
     return (
-        <div>
-            <h2>Chat Room</h2>
-            <ChatContainer />
+        <div className = "relative col-span-7 bg-background py-10 px-8">
+            <h2 className="text-4xl font-black">Chat Room</h2>
+            <ChatContainer/>
         </div>
     );
 };

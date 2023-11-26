@@ -31,7 +31,7 @@ const ChatContainer = () => {
     };
 
     return (
-        <div>
+        <div className='mt-6'>
             <MessageList messages={conversation}/>
             <MessageForm onSendMessage={sendMessage}/>
         </div>

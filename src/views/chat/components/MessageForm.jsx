@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types";
-
+import sendIcon from '../../../media/sendIcon.png'
 const MessageForm = ({ onSendMessage }) => {
     const [message, setMessage] = useState('');
 
@@ -13,14 +13,17 @@ const MessageForm = ({ onSendMessage }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='absolute flex bottom-0 w-full bg-background2 p-3'>
             <input
+                className='bg-transparent w-5/6'
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message..."
             />
-            <button type="submit">Send</button>
+            <button type="submit">
+                <img src={sendIcon} alt="Send Icon"/>
+            </button>
         </form>
     );
 };
