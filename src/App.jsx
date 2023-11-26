@@ -6,13 +6,13 @@ import Toolbar from "./views/toolbar/Toolbar";
 function App() {
     return (
         <div className="App">
-            <div className="container mx-auto">
-                <div className="columns-3">
+            <body>
+                <div className="grid grid-cols-12 gap-4 h-screen">
                     <Navigation/>
                     <Chat />
                     <Toolbar />
                 </div>
-            </div>
+            </body>
         </div>
     );
 }

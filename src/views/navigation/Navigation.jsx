@@ -1,10 +1,12 @@
+import React from 'react';
+
 const Navigation = () => {
     return (
-        <nav className="columns-2">
-            <div className="w-full">
+        <nav className="col-span-1">
+            <div className="">
                 test
             </div>
-            <div className="px-4 w-full">
+            <div className="px-4">
                 hallo
             </div>
         </nav>

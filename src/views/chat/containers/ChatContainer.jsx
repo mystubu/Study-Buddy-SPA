@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import MessageList from '../components/MessageList';
 import MessageForm from '../components/MessageForm';
 import api from '../../../services/api';
@@ -32,7 +32,7 @@ const ChatContainer = () => {
 
     return (
         <div>
-            <MessageList messages={conversation}/>
+            {/*<MessageList messages={conversation}/>*/}
             <MessageForm onSendMessage={sendMessage}/>
         </div>
     );

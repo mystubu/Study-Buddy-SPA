@@ -1,6 +1,6 @@
 const Toolbar = () => {
     return (
-        <div>
+        <div className="col-span-4">
             Dit is het rechter stukje
         </div>
     )
