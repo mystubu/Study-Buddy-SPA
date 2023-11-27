@@ -6,7 +6,7 @@ import Toolbar from "./views/toolbar/Toolbar";
 function App() {
     return (
         <div className="App">
-            <body>
+            <body className="bg-slate-100">
                 <div className="grid grid-cols-12 gap-4 h-screen">
                     <Navigation/>
                     <Chat />

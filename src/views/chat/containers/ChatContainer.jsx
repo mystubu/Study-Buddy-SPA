@@ -32,7 +32,7 @@ const ChatContainer = () => {
 
     return (
         <div>
-            {/*<MessageList messages={conversation}/>*/}
+            <MessageList messages={conversation}/>
             <MessageForm onSendMessage={sendMessage}/>
         </div>
     );
