@@ -15,7 +15,7 @@ const MessageForm = ({ onSendMessage }) => {
     return (
         <form onSubmit={handleSubmit} className='absolute flex bottom-0 w-full bg-background2 p-3'>
             <input
-                className='bg-transparent w-5/6'
+                className='bg-transparent w-5/6 text-secondary'
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
