@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const MessageList = ({ messages }) => {
     return (
@@ -8,8 +8,8 @@ const MessageList = ({ messages }) => {
                 <li
                     className={
                         message.name === 'User' 
-                        ? 'border-2 border-border bg-msgBg rounded-md py-2 px-2 mt-2 text-secondary' 
-                        : 'border-2 border-black bg-background2 rounded-md py-2 px-2 mt-2 text-white' // Replace this with the class you want to apply for non-user messages
+                            ? 'border-2 border-border bg-msgBg rounded-md py-2 px-2 mt-2 text-secondary' 
+                            : 'border-2 border-black bg-background2 rounded-md py-2 px-2 mt-2 text-white' 
                     }
                     key={index}
                 >

@@ -23,6 +23,6 @@ const api = {
             throw error;
         }
     },
-}
+};
 
 export default api;

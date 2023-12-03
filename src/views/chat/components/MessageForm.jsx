@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import PropTypes from "prop-types";
-import sendIcon from '../../../media/sendIcon.png'
+import PropTypes from 'prop-types';
+import sendIcon from '../../../media/sendIcon.png';
 const MessageForm = ({ onSendMessage }) => {
     const [message, setMessage] = useState('');
 
