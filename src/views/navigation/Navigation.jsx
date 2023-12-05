@@ -31,8 +31,9 @@ const Navigation = () => {
             <div>
                 <FaGear />
             </div>
+
         </nav>
-    )
-}
+    );
+};
 
 export default Navigation;

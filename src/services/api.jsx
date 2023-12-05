@@ -22,7 +22,8 @@ const api = {
             console.error('Error fetching messages:', error.message);
             throw error;
         }
-    },
-}
+    },ko
+};
+
 
 export default api;

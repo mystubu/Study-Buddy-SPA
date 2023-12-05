@@ -9,7 +9,7 @@ const Toolbar = () => {
                 <input type="text"/>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Toolbar;
