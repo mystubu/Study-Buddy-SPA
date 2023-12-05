@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import loginRequest from '../../../services/login';
 
 const LoginContainer = () => {
@@ -35,6 +35,6 @@ const LoginContainer = () => {
             <button type="submit">Login</button>
         </form>
     );
-}
+};
 
 export default LoginContainer;

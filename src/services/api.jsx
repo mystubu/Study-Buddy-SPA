@@ -4,7 +4,7 @@ const api = {
     // GET request
     PostMessage: async (userMessage) => {
         try {
-            const response = await fetch(`${BASE_URL}/conversation`, {
+            const response = await fetch(`${BASE_URL}/conversation/chat`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
