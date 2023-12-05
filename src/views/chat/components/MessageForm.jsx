@@ -1,49 +1,68 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import sendIcon from '../../../media/sendIcon.png';
-import { GrAttachment } from "react-icons/gr";
+import PropTypes from 'prop-types'; // Import PropTypes
+import { IoMdSend } from "react-icons/io";
 
-const MessageForm = ({ onSendMessage }) => {
+export default function MessageForm({ onSendMessage }) {
     const [message, setMessage, setFileName] = useState('');
 
-    const handleSubmit = (e) => {
+    function handleSubmit(e) {
         e.preventDefault();
         if (message.trim() !== '') {
             onSendMessage(message);
             setMessage('');
         }
-    };
-    
-    const handleFileChange = (event) => {
-        setFileName(event.target.files[0].name);
-    };
+    }
 
     return (
-        <form onSubmit={handleSubmit} className='flex justify-between space-x-5 w-full bg-msgBg px-10 p-3 rounded-t-3xl'>
-            <div className='bg-white rounded-full p-5'>
-                <input type='file' id='file-upload' className='hidden' onChange={handleFileChange}/>
-                <label htmlFor='file-upload'>
-                    <GrAttachment/>
-                </label>
-            </div>
-
-            
-            <input
-                className='bg-white w-full rounded-md w-5/6 text-secondary'
+        <form onSubmit={handleSubmit} className="flex bg-slate-400 pt-6 pb-4 rounded-t-[50px]">
+           <input
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message..."
+                className="w-full ml-[60px] mr-[10px] p-1 rounded-lg"
             />
-            <button type="submit">
-                <img src={sendIcon} alt="Send Icon"/>
+            <button className="mr-[60px]" type="submit">
+                <IoMdSend />
             </button>
-        </form>
+         </form>
     );
-};
+}
 
+// Add prop type validation for onSendMessage
 MessageForm.propTypes = {
     onSendMessage: PropTypes.func.isRequired,
 };
 
-export default MessageForm;
+
+// const MessageForm = ({ onSendMessage }) => {
+//     const [message, setMessage] = useState('');
+//
+//     const handleSubmit = (e) => {
+//         e.preventDefault();
+//         if (message.trim() !== '') {
+//             onSendMessage(message);
+//             setMessage('');
+//         }
+//     };
+//
+//
+//     return (
+//         <form onSubmit={handleSubmit}>
+//             <input
+//                 type="text"
+//                 value={message}
+//                 onChange={(e) => setMessage(e.target.value)}
+//                 placeholder="Type your message..."
+//             />
+//             <button type="submit">Send</button>
+//         </form>
+//     );
+// };
+//
+// // Add prop type validation for onSendMessage
+// MessageForm.propTypes = {
+//     onSendMessage: PropTypes.func.isRequired,
+// };
+//
+// export default MessageForm;

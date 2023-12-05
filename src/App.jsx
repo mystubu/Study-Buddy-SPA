@@ -7,12 +7,14 @@ import Login from './views/login/Login';
 
 function App() {
     return (
-        <div className="App bg-background">
-            <div className="grid grid-cols-12 h-screen text-primary">
-                <Navigation/>
-                <Login />
-                <Toolbar />
-            </div>
+        <div className="App">
+            <body className="bg-slate-100">
+                <div className="grid grid-cols-12 gap-4 h-screen">
+                    <Navigation/>
+                    <Chat />
+                    <Toolbar />
+                </div>
+            </body>
         </div>
     );
 }

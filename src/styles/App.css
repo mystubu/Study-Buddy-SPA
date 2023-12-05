@@ -1,5 +1,8 @@
+@import "index.css";
+
 .App {
   text-align: center;
+  color: black;
 }
 
 .App-logo {
