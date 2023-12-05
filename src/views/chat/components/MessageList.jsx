@@ -1,18 +1,18 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'; // Import PropTypes
 
-const MessageList = ({ messages }) => {
+export default function MessageList({ messages }) {
+
     return (
-        <ul>
-            {messages.map((message, index) => (
+        <ul> {messages.map((message, index) => (
                 <li key={index}>{message.name}: {message.message}</li>
             ))}
         </ul>
     );
-};
+}
 
+// Add prop type validation for onSendMessage
 MessageList.propTypes = {
-    messages: PropTypes.array.isRequired,
+    messages: PropTypes.func.isRequired,
 };
 
-export default MessageList;
