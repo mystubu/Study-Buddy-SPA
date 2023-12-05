@@ -3,8 +3,7 @@ import ChatContainer from './containers/ChatContainer';
 
 const Chat = () => {
     return (
-        <div className = "relative col-span-7 bg-background py-10 px-8">
-            <h2 className="text-4xl">Chat Room</h2>
+        <div className = "relative col-span-7 bg-background pt-10 px-8">
             <ChatContainer/>
         </div>
     );

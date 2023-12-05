@@ -31,7 +31,7 @@ const ChatContainer = () => {
     };
 
     return (
-        <div className='mt-6'>
+        <div className='flex flex-col justify-between h-full'>
             <MessageList messages={conversation}/>
             <MessageForm onSendMessage={sendMessage}/>
         </div>
