@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes
+import PropTypes from 'prop-types';
 import { IoMdSend } from "react-icons/io";
 
 export default function MessageForm({ onSendMessage }) {
