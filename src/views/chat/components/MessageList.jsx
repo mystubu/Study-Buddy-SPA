@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes
+import PropTypes from 'prop-types';
 
 export default function MessageList({ messages }) {
 
@@ -21,7 +21,6 @@ export default function MessageList({ messages }) {
     );
 }
 
-// Add prop type validation for onSendMessage
 MessageList.propTypes = {
     messages: PropTypes.func.isRequired,
 };

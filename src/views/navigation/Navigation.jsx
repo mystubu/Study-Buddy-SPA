@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaUserCircle } from "react-icons/fa";
-import { FaGear } from "react-icons/fa6";
-import { FaUserGroup } from "react-icons/fa6";
-import { MdSpaceDashboard } from "react-icons/md";
-import { FaHistory } from "react-icons/fa";
+import { FaUserCircle } from 'react-icons/fa';
+import { FaGear } from 'react-icons/fa6';
+import { FaUserGroup } from 'react-icons/fa6';
+import { MdSpaceDashboard } from 'react-icons/md';
+import { FaHistory } from 'react-icons/fa';
 
 const Navigation = () => {
     return (

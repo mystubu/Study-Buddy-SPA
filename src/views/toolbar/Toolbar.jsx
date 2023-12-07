@@ -1,4 +1,5 @@
-import { FaChevronRight } from "react-icons/fa";
+import React from 'react';
+import { FaChevronRight } from 'react-icons/fa';
 
 const Toolbar = () => {
     return (
