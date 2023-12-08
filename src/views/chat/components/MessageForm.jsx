@@ -29,40 +29,6 @@ export default function MessageForm({ onSendMessage }) {
     );
 }
 
-// Add prop type validation for onSendMessage
 MessageForm.propTypes = {
     onSendMessage: PropTypes.func.isRequired,
 };
-
-
-// const MessageForm = ({ onSendMessage }) => {
-//     const [message, setMessage] = useState('');
-//
-//     const handleSubmit = (e) => {
-//         e.preventDefault();
-//         if (message.trim() !== '') {
-//             onSendMessage(message);
-//             setMessage('');
-//         }
-//     };
-//
-//
-//     return (
-//         <form onSubmit={handleSubmit}>
-//             <input
-//                 type="text"
-//                 value={message}
-//                 onChange={(e) => setMessage(e.target.value)}
-//                 placeholder="Type your message..."
-//             />
-//             <button type="submit">Send</button>
-//         </form>
-//     );
-// };
-//
-// // Add prop type validation for onSendMessage
-// MessageForm.propTypes = {
-//     onSendMessage: PropTypes.func.isRequired,
-// };
-//
-// export default MessageForm;

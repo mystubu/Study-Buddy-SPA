@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import { FaChevronRight } from "react-icons/fa";
-import React from 'react'
-=======
 import React from 'react';
 import { FaChevronRight } from 'react-icons/fa';
->>>>>>> fae7de41770198b430f97d556f21032111b61f4d
 
 const Toolbar = () => {
     return (

@@ -1,7 +1,6 @@
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'http://localhost:8080'; // todo: set through env variable
 
 const api = {
-    // GET request
     PostMessage: async (userMessage) => {
         try {
             const response = await fetch(`${BASE_URL}/conversation/chat`, {
