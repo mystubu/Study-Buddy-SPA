@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { IoMdSend } from "react-icons/io";
+import { IoMdSend } from 'react-icons/io';
 
 export default function MessageForm({ onSendMessage }) {
-    const [message, setMessage, setFileName] = useState('');
+    const [message, setMessage] = useState('');
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -15,7 +15,7 @@ export default function MessageForm({ onSendMessage }) {
 
     return (
         <form onSubmit={handleSubmit} className="flex bg-slate-400 pt-6 pb-4 rounded-t-[50px]">
-           <input
+            <input
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -25,7 +25,7 @@ export default function MessageForm({ onSendMessage }) {
             <button className="mr-[60px]" type="submit">
                 <IoMdSend />
             </button>
-         </form>
+        </form>
     );
 }
 
