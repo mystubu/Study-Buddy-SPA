@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { IoMdSend } from "react-icons/io";
 
 export default function MessageForm({ onSendMessage }) {
-    const [message, setMessage, setFileName] = useState('');
+    const [message, setMessage] = useState('');
 
     function handleSubmit(e) {
         e.preventDefault();

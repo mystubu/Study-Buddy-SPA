@@ -8,8 +8,8 @@ export default function MessageList({ messages }) {
                 <li
                     className={
                         message.name === 'User'
-                            ? 'border-2 border-border bg-msgBg rounded-md py-2 px-2 mt-2 text-secondary'
-                            : 'border-2 border-black bg-background2 rounded-md py-2 px-2 mt-2 text-white'
+                            ? 'border-border bg-msgBg rounded-md py-2 px-2 mt-2 text-white'
+                            : 'border-black bg-background2 rounded-md py-2 px-2 mt-2 text-white'
                     }
                     key={index}
                 >
