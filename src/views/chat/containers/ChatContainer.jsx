@@ -39,9 +39,9 @@ const ChatContainer = () => {
     return (
         <div className='flex flex-col justify-between h-full'>
             <div>
-            <MessageList messages={conversation}/>
-            {isTyping && <TypingAnimation />} {/* Render TypingAnimation component when isTyping is true */}
-          </div>
+                <MessageList messages={conversation}/>
+                {isTyping && <TypingAnimation />} {/* Render TypingAnimation component when isTyping is true */}
+            </div>
           
           
             <MessageForm onSendMessage={sendMessage}/>

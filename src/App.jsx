@@ -8,11 +8,11 @@ function App() {
     return (
         <div className="App">
             <body className="bg-slate-100">
-            <div className="grid grid-cols-12 gap-4 h-screen">
-                <Navigation/>
-                <Chat/>
-                <Toolbar/>
-            </div>
+                <div className="grid grid-cols-12 gap-4 h-screen">
+                    <Navigation/>
+                    <Chat/>
+                    <Toolbar/>
+                </div>
             </body>
         </div>
     );
