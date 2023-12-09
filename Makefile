@@ -1,7 +1,7 @@
-.PHONY: development
-development:
-	ENV=development docker-compose up --build
+.PHONY: dev
+dev:
+	docker-compose up development --build
 
-.PHONY: deploy
-deploy:
-	ENV=production docker-compose up --build
+.PHONY: prod
+prod:
+	docker-compose up production --build
