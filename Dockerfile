@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 
-COPY . ./app
+COPY . .
 RUN npm run build
 
 CMD ["npm", "run", "start"]
@@ -12,6 +12,4 @@ CMD ["npm", "run", "start"]
 #FROM nginxinc/nginx-unprivileged:1.23-alpine-perl
 #
 #COPY --link nginx.conf /etc/nginx/conf.d/default.conf
-#COPY --link --from=build usr/src/app/dist/ /usr/share/nginx/html
-#
-#EXPOSE 3000
+#COPY --link --from=build usr/src/app/build/ /usr/share/nginx/html
