@@ -1,4 +1,6 @@
-const BASE_URL = 'http://localhost:8080'; // todo: set through env variable
+require('dotenv').config();
+
+const BASE_URL = process.env.API_URL  // todo: set through env variable
 
 const api = {
     PostMessage: async (userMessage) => {
