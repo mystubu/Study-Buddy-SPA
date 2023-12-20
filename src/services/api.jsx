@@ -1,6 +1,4 @@
-require('dotenv').config();
-
-const BASE_URL = process.env.API_URL  // todo: set through env variable
+const BASE_URL = process.env.API_URL;
 
 const api = {
     PostMessage: async (userMessage) => {
