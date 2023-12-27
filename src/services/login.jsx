@@ -1,13 +1,12 @@
 const BASE_URL = 'http://localhost:8080';
 
-const loginRequest = async (username, password) => {
+const loginRequest = async () => {
     try {
         const response = await fetch(`${BASE_URL}/login`, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username, password }),
+            }
         });
 
         if (response.ok) {
